@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week 11</title>
+</head>
+<body>
+    <h1 id="head1" style="color: red;">original heading</h1>
+    <h2 class="head2"></h2>
+    <h2 class="head2"></h2>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p name="anjay"></p>
+    <p name="anjay"></p>
+    <p name="anjay"></p>
+    <p name="anjay"></p>
+    <p name="anjay"></p>
+    <h3 id="result1"></h3>
+    <h3 id="result2"></h3>
+
+
+    <script>
+        document.getElementById("head1").innerHTML ="This is new heading";
+        var  headList;
+
+    headList= document.getElementsByClassName("head2")
+    headList[0].innerHTML="This is get elments by class";
+    headList[1].innerHTML="Another get element by class";
+    var paraList;
+    paraList = document.getElementsByClassName("para")
+       for(var x=0;x<100;x++){
+        var y=x+1;
+        paraList[x].innerHTML="Paragraph "+y;
+       }
+       var nameList;
+       nameList = document.getElementsByName("anjay")
+        var paraLengnth;    
+        paraLengnth=paraList.length;
+        var nameLength;
+        nameLength=nameList.length;
+        document.getElementById("result1").innerHTML=""+paraList;
+       document.getElementById("result2").innerHTML="The number of paragraph is "+ paraLengnth + "and the number of name is "+nameLength;
+    </script>
+</body>
+</html>
